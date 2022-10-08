@@ -1,0 +1,5 @@
+bazel-ProtoBuf-Example
+bazel-bin
+bazel-out
+bazel-testlogs
+
