@@ -1,6 +1,6 @@
 #include<fstream>
 #include <iostream>
-#include "lib/message.pb.h"
+#include "message.pb.h"
 
 using namespace std;
 
