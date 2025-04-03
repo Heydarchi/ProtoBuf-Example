@@ -1,33 +1,77 @@
 # ProtoBuf-Example
-A simple example to show how to use protobuf in C++ with Bazel.
 
-#### Prerequisites:
-
-To build and run the example there're some prerequisites. So if you don't have them try to use the commands below to install them:
-
-- Install Bazel
-
-```
-sudo apt-get install bazel
-```
-*If you have any problem for installing bazel, the link below will be helpful.*
-
-[Installing Bazel on Ubuntu](https://bazel.build/install/ubuntu)
+A simple example demonstrating how to use Protocol Buffers (protobuf) in C++ using a Makefile.
 
 
 
+## Prerequisites
 
-- Install ProtoBuf-Compiler
+Before building and running the example, make sure the following tools are installed:
 
-```
-sudo apt-get install protobuf-compiler
+### Install Protobuf Compiler
+
+```bash
+sudo apt-get install protobuf-compiler libprotobuf-dev
 ```
 
-#### How to build the example
-Just run the command below inside the folder that you've cloned the example.
+For macOS:
 
+```bash
+brew install protobuf
 ```
-bazel build //app:proto_example
+
+### Install a C++ Compiler
+
+Make sure `g++` is available. On Ubuntu/Debian:
+
+```bash
+sudo apt-get install build-essential
 ```
 
 
+
+## Build the Example
+
+Clone this repo and run:
+
+```bash
+make
+```
+
+This will:
+- Compile the `.proto` file (`lib/message.proto`)
+- Build the main application (`app/proto_example.cpp`)
+- Output the binary to: `build/proto_example`
+
+
+
+## ▶Run the Example
+
+```bash
+./build/proto_example
+```
+
+
+
+## Clean Build Artifacts
+
+To remove all generated files:
+
+```bash
+make clean
+```
+
+
+
+## 📁 Project Structure
+
+```
+ProtoBuf-Example/
+├── app/
+│   └── proto_example.cpp        # Main C++ application
+├── lib/
+│   ├── message.proto            # Protobuf definition
+│   └── proto_utility.h          # Helper functions
+├── Makefile                     # Replaces Bazel
+└── README.md
+```

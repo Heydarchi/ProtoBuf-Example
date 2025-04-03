@@ -2,4 +2,5 @@ bazel-ProtoBuf-Example
 bazel-bin
 bazel-out
 bazel-testlogs
-
+build/
+test.bin

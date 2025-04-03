@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
-#include "lib/message.pb.h"
-#include "lib/proto_utility.h"
+#include "../lib/message.pb.h"
+#include "../lib/proto_utility.h"
 
 
 using namespace std;
