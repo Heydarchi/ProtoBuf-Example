@@ -3,6 +3,13 @@
 A simple example demonstrating how to use Protocol Buffers (protobuf) in C++ using a Makefile.
 
 
+## YouTube
+
+Here, you can find a YouTube video explaining Protobuf and this project as well:
+
+[![Quick Practical Introduction to Protobuf: File → Code → Android & C++ Examples](https://img.youtube.com/vi/R9yPMnCbpJY/maxresdefault.jpg)](https://youtu.be/R9yPMnCbpJY)
+
+
 
 ## Prerequisites
 
